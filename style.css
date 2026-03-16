@@ -278,7 +278,7 @@ button[type=submit] {
         grid-template-columns: 1fr;
         gap: 20px;
         align-items: center;
-        padding: 20px 30px;
+        padding: 20px;
     }
     .menu {
         display: grid;
@@ -293,16 +293,18 @@ button[type=submit] {
     .portada {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 50px 20px;
-    }
+        padding: 40px 20px;
+}
+
     body {
         min-height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        overflow-x: hidden;
     }
     .imagen-portada img {
-        width: 300px;
+        width: 100%;
         max-width: 350px;
     }
     .imagen-portada {
