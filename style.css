@@ -114,7 +114,7 @@ h1 span {
 }
 
 .imagen-portada img {
-    width: 800px;
+width: 800px;
 }
 
 
@@ -211,7 +211,8 @@ h1 span {
     background: radial-gradient(circle at top, #141414, #0a0a0a);
     padding: 40px;
     border-radius: 12px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 50px auto;
     color: #ffffff;
   }  
@@ -274,46 +275,60 @@ button[type=submit] {
 @media (max-width: 600px) {
 
     .barranavegación {
-        display: grid;
+    
         grid-template-columns: 1fr;
-        gap: 20px;
-        align-items: center;
-        padding: 20px;
+        gap: 15px;
+        justify-content: center;
+        padding: 20px 15px;
+    }
+    .logo {
+        font-size: 22px;
+        text-align: center;
     }
     .menu {
         display: grid;
-        grid-template-columns: repeat (2, (1fr));
+        grid-template-columns: repeat (2,1fr);
         gap: 10px;
         text-align: center;
     }
-
+    .menu a {
+        font-size: 16px;
+    }
+    .botonprueba    {
+        width: 100%;
+        max-width: 260px;
+        justify-content: center;
+        font-size: 16px;
+        padding: 10px 15px;
+    
+    }
     h1 {
         font-size: 40px;
     }
     .portada {
-        display: grid;
         grid-template-columns: 1fr;
-        padding: 40px 20px;
-}
-
+        padding: 40px 15px;
+    }
     body {
         min-height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        overflow-x: hidden;
     }
     .imagen-portada img {
         width: 100%;
-        max-width: 350px;
+        max-width: 250px;
+        height: auto;
+
     }
     .imagen-portada {
-        display: grid;
+        display: flex;
         justify-content: center;
         margin-top: 20px;
     }
     .contenedor-botones {
         grid-auto-flow: row;
+        gap: 15px;
     }
     .tarjeta-caracteristicas {
         width: 100%;
@@ -325,5 +340,12 @@ button[type=submit] {
         gap: 30px;
         padding: 70px 6%;
     }
+    .boton-primario,.boton-secundario {
+        width: 100%;
+    }
+    .formulario {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+    }
 }
-
