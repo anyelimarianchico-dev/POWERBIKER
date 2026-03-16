@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #854905, #1b1b1b);
+    color: rgb(250, 250, 250);
+}
+
+
+.barranavegación {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logo span {
+    color: rgb(255, 153, 0);
+}
+
+.menu {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.botonprueba {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+}
+
+.contenido-portada {
+    max-width: 500px;
+}
+
+.subtexto {
+    font-size: 12px;
+    color: rgb(255, 166, 0);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+h1 span {
+    color: orange;
+}
+
+.descripción {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.contenedor-botones {
+    margin-top: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.boton-primario {
+    background-color: orange;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-secundario {
+    background-color: transparent;
+    border: 1px solid rgb(235, 221, 32);
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+}
+
+.imagen-portada img {
+    width: 800px;
+}
+
+
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 30px;
+    padding: 70px 6%;
+    background: radial-gradient(circle at top, #141414, #0a0a0a);
+}
+
+
+.tajerta-caracteristicas {
+    background: linear-gradient(160deg, #1a1a1a, #0f0f0f);
+    border-radius: 18px;
+    padding: 32px;
+    width: 300px;
+    color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.65);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    ;
+}
+
+.tarjeta-caracteristicas- {
+    position: relative;
+    z-index: 2;
+    ;
+}
+
+.tarjeta-caracteristicas::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 122, 0, 0.25),
+            transparent);
+
+    opacity: 0;
+    transition: opacity 0.35s ease;
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.tarjeta-caracteristicas:hover::before {
+    opacity: 1;
+}
+
+.tarjeta-caracteristicas:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.85);
+}
+
+.tarjeta-caracteristicas .icon {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #080808, #d1ac32);
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.tarjeta-caracteristicas h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.titulo-carateristicas {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #ff7a00;
+    margin: 12px 0 16px;
+    text-transform: uppercase;
+}
+
+.descripción-caracteriticas {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #cfcfcf;
+}
+
+.formulario {
+    background: radial-gradient(circle at top, #141414, #0a0a0a);
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    margin: 50px auto;
+    color: #ffffff;
+  }  
+
+form {
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input[type=text],
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: orange;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.piepagina{
+    background: #0a0a0a;
+    padding: 50px 60px 20px;
+    margin-top: 60px;
+}
+
+.contenido-footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 40px;
+}
+
+.footer-logo span{
+    color: orange;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aaa;
+}
+@media (max-width: 600px) {
+
+    .barranavegación {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+        padding: 20px 30px;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: repeat (2, (1fr));
+        gap: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    .portada {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+    }
+    body {
+        min-height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .imagen-portada img {
+        width: 300px;
+        max-width: 350px;
+    }
+    .imagen-portada {
+        display: grid;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .contenedor-botones {
+        grid-auto-flow: row;
+    }
+    .tarjeta-caracteristicas {
+        width: 100%;
+    }
+    .caracteristicas {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 30px;
+        padding: 70px 6%;
+    }
+}
+
